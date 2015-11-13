@@ -15,5 +15,14 @@ promises.push(tirando_fazedor_de_xixi(true));
 
 Promise
 	.all(promises)
-	.then(console.log,console.error)
+	.then(success,error);
+
+
+function success (data){
+	console.log(data);
+}
+
+function error (err){
+	console.log(err);
+}
 
